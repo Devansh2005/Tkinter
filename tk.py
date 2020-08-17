@@ -115,7 +115,7 @@ def action():  # action for submit button
     else:
         love_me="Yes"
 
-    #csv file
+    #csv file as file1 is saved
 
     with open("file1.csv","a", newline="") as f:
         dict_writer= DictWriter(f, fieldnames=["UserName","EmailAddress","UserGender","Usertype","Love me"])

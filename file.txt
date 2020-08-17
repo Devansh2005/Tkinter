@@ -1,4 +1,0 @@
-Devansh,21,Male,dev20@ggmail.com,Student,Yes
-hardik,200,Male,20@gmail.com,Student,Yes
-kartik,3,Male,k@gmail.com,Student,Yes
-devamnsu,2,Male,dt@gmail.com,Student,Yes
