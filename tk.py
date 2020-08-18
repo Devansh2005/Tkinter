@@ -25,6 +25,7 @@ gender_label=ttk.Label(win, text="Select your gender")
 gender_label.grid(row=3, column=0)
 
 #CREATE ENTRY BOX
+
 name_var=tk.StringVar() # to strore entered name
 name_entrybox=ttk.Entry(win, width=16, textvariable= name_var)
 name_entrybox.grid(row=0,column=1)
@@ -105,7 +106,7 @@ checkbtn.grid(row=5, columnspan=3) #columnspan--> take 3 columns but dont extend
 
 
 def action():  # action for submit button
-    username= name_var.get()
+    username= name_var.get()                   #get the information From the variables 
     userage= age_var.get()
     useremail= email_var.get()
     usergender= gender_var.get()
@@ -131,14 +132,16 @@ def action():  # action for submit button
 
 
 
-
-
+# To delete the values automatically from GUI
     name_entrybox.delete(0, tk.END)
     age_entrybox.delete(0, tk.END)
     email_entrybox.delete(0, tk.END)
+    	
+    
 
 
-submit_button=ttk.Button(win, text="Submit", command=action)
+
+submit_button=ttk.Button(win, text="Submit", command=action)   #command takes the function name
 submit_button.grid(row=6,column=0)
 
 
